@@ -1,0 +1,5 @@
+https://opensource.googleblog.com/2023/06/rust-fact-vs-fiction-5-insights-from-googles-rust-journey-2022.html
+
+Slow build speeds were by far the #1 reported challenge that developers have when using Rust, with only a little more than 40% of respondents finding the speed acceptable.
+
+There is already a fantastic community-wide effort [improving and tracking](https://perf.rust-lang.org/index.html) rustc performance. This is supported by both volunteers and several companies ([including Google](https://www.memorysafety.org/initiative/tools/)), and we’re delighted to see [key](https://github.com/pcwalton) [developers](https://nnethercote.github.io/2023/03/24/how-to-speed-up-the-rust-compiler-in-march-2023.html) working in this space but clearly continuing and potentially growing additional support here would be beneficial.
