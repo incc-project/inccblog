@@ -30,6 +30,10 @@ Safe the build time of LLVM. [link](./understanding-llvm-src/safe-build-time.md)
 
 # Linking
 
+## Comdat
+
+How to handle conflicting symbols? [link](./linking/comdat.md)
+
 # Runtime
 
 # Program Analysis
