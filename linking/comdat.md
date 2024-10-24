@@ -424,8 +424,6 @@ Symbol table '.symtab' contains 12 entries:
     11: 0000000000000000    20 FUNC    WEAK   DEFAULT   12 _ZN4DataC2Ev
 ```
 
-group中不会包含重定位表中已经写明的显式依赖节，以及debug，异常等节，只会包含隐式依赖节，比如text, rela, 衍生bss, startup, init array等，应该是为了节省空间.
-
 I find that group will not include explicit dependencies, which are already specified in the relocation table, debug table or exception table, such as `test` to `x`. It will only include implicit dependencies, such as `.text`. `.rela`, derived `.bss`, derived `startup`, etc.,  presumably to save space.
 
 # References
