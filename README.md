@@ -16,7 +16,7 @@ Safe the build time of LLVM. [link](./understanding-llvm-src/safe-build-time.md)
 
 ## Preprocessing and Lexing
 
-## Parsing
+## Parsing, Sema and IR Generation
 
 ### Template Instantiation
 
