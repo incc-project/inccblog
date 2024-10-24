@@ -2,15 +2,7 @@
 
 This is the blog page of INCC group.
 
-# Understanding LLVM Source Code
-
-## Safe LLVM Build Time
-
-Safe the build time of LLVM. [link](./understanding-llvm-src/safe-build-time.md)
-
 # C++
-
-# Rust
 
 # Frontend
 
@@ -21,10 +13,6 @@ Safe the build time of LLVM. [link](./understanding-llvm-src/safe-build-time.md)
 ### Template Instantiation
 
 An example of parsing template, instantiating functions, and generating IR. [link](./frontend/parse-sema-ir/clang-inst.md)
-
-## Sema
-
-## IR
 
 # Backend
 
@@ -40,15 +28,15 @@ How to handle conflicting symbols? [link](./linking/comdat.md)
 
 # Runtime
 
-# Program Analysis
-
-# AI Compiler
-
 # Paper
 
 # Tool
 
 # Misc
+
+## Safe LLVM Build Time
+
+Safe the build time of LLVM. [link](./understanding-llvm-src/safe-build-time.md)
 
 ## Google Rust Report
 
