@@ -18,6 +18,10 @@ Safe the build time of LLVM. [link](./understanding-llvm-src/safe-build-time.md)
 
 ## Parsing
 
+### Template Instantiation
+
+An example of parsing template, instantiating functions, and generating IR. [link](./frontend/parse-sema-ir/clang-inst.md)
+
 ## Sema
 
 ## IR
