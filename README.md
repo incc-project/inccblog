@@ -32,11 +32,15 @@ How to handle conflicting symbols? [link](./linking/comdat.md)
 
 # Tool
 
+## Clang Tool Example
+
+An example on how to implement a clang tool. [link](./tool/clang-tool-example.md)
+
 # Misc
 
 ## Safe LLVM Build Time
 
-Safe the build time of LLVM. [link](./understanding-llvm-src/safe-build-time.md)
+Safe the build time of LLVM. [link](./misc/safe-build-time.md)
 
 ## Google Rust Report
 
