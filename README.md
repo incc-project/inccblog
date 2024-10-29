@@ -138,6 +138,72 @@ Debug the source code of llvm-link. [link](./linking/llvm-link.md)
 
 # Paper
 
+## Continuous program optimization: Design and evaluation
+
+IEEE Transactions on Computers 2002
+
+Thomas Kistler, Member, IEEE, and Michael Franz, Member, IEEE
+
+本文通过收集代码的动态运行数据, 对代码进行PGO优化, 并用优化后的代码热更新优化前的代码, 整个过程会持续进行. [link](./paper/Continuous-program-optimization-Design-and-evaluation.md)
+
+## Enabling Fine-Grained Incremental Builds by Making Compiler Stateful
+
+CGO 24
+
+Ruobing Han[1], Jisheng Zhao[1], Hyesoon Kim[1]
+
+[1] Georgia Institute of Technology Atlanta, USA
+
+设计了一种有状态编译方法, 可以复用历史编译产物, 从而加速增量编译. 
+
+具体而言, 有状态编译器将保留上次编译时pass的休眠信息, 并在后续编译中绕过休眠的pass.
+
+作者在Clang上扩展了本文的有状态编译方法, 相比Clang加速了6.72%. [link](./paper/Enabling-Fine-Grained-Incrementa- Builds-by-Making-Compiler-Stateful.md)
+
+## Incremental Whole Program Optimization and Compilation
+
+CGO 17
+
+Patrick W. Sathyanathan[1], Wenlei He[1], and Ten H. Tzen[1] 
+
+[1]Microsoft Corp, USA
+
+面向全程序的增量编译优化.
+
+关键技术: 
+
+* 描述符号之间依赖关系的依赖图, 数据流格, 用于最小化需要重新分析/编译的代码数量.
+* 轻量级checksum, 用于检测函数和变量的修改.
+* 在多级内敛展开下仍能确保无差异的代码生成. (Binary等价)
+
+相比Visual C/C++ compiler达到了7倍的加速比. [link](./paper/Incremental-Whole-Program-Optimization-and-Compilation.md)
+
+## ThinLTO: Scalable and Incremental LTO
+
+CGO 17
+
+Teresa Johnson[1], Mehdi Amini[2], Xinliang David Li[1]
+
+[1] Google, USA
+
+[2] Apple, USA
+
+相关文档也可以参考LLVM Project Blog: https://blog.llvm.org/2016/06/thinlto-scalable-and-incremental-lto.html
+
+现有LTO框架不scalable, 在大型项目上优化效率较低. 因此本文提出了一种scalable且支持增量的LTO框架: ThinLTO. [link](./paper/ThinLTO-Scalable-and-Incrementa- LTO.md)
+
+## The Architecture of Montana: An Open and Extensible Programming Environment with an Incremental C++ Compiler 
+
+Michael Karasick
+
+Programming Environments and Compilation IBM T.J. Watson Research Center 
+
+ACM SIGSOFT Software Engineering Notes, Volume 23, Issue 6
+
+Montana即包含了构建系统, 也包含了C++编译器. 支持细粒度的增量编译.
+
+最大的问题是其没有采用C++标准, 而是自定义标准, 需要开发者重新学习其自定义标准.  [link](./paper/Montana.md)
+
 # Tool
 
 ## Clang Tool Example
