@@ -1,6 +1,5 @@
 
-# Equivalence by Canonicalization for Synthesis-Backed
-Refactoring
+# Equivalence by Canonicalization for Synthesis-Backed Refactoring
 
 JUSTIN LUBIN, University of California, Berkeley, USA  
 JEREMY FERGUSON∗, University of California, Berkeley, USA  
